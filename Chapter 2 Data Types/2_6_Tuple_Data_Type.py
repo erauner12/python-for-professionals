@@ -1,9 +1,12 @@
-# Lists are enclosed in brackets[] and their elements and size can be changed, while tuples are enclosed in
-# parentheses() and cannot be updated. Tuples are immutable.
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jul 26 15:34:12 2020
+
+@author: Harry
+"""
+
 tuple = (123, 'hello')
 tuple1 = ('world')
-print(tuple)  # will output whole tuple. (123,'hello')
-print(tuple + tuple1)  # will output (123,'hello','world')
-
-
-# tuple[1] = 'update'  # this will give you error.
+print(tuple)
+print(tuple[0])
+# tuples cant be concatenated togther or updated/ addded too similar to frozenset
