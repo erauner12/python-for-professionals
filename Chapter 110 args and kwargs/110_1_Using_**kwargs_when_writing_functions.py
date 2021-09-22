@@ -9,7 +9,7 @@ def print_kwargs(**kwargs):
 
 # When calling the method, Python will construct a dictionary of all keyword arguments and make it available in the
 # function body:
-print_kwargs(a="two", b=3)
+print_kwargs(a="two", b=3, c=4)
 # prints: "{a: "two", b=3}"
 
 # Note that the ** kwargs parameter in the function definition must always be the last parameter, and it will only
@@ -20,7 +20,7 @@ def example(a, **kw):
     print(kw)
 
 
-example(a=2, b=3, c=4)  # => {'b': 3, 'c': 4}
+example(a=2, b=3, c=4, d=5)  # => {'b': 3, 'c': 4}
 
 
 # Inside the function body, kwargs is manipulated in the same way as a dictionary
@@ -32,7 +32,7 @@ def print_kwargs(**kwargs):
         print("key = {0}, value = {1}".format(key, kwargs[key]))
 
 
-print_kwargs(a="two", b=1)
+print_kwargs(a="two", b=1, c=4)
 # Out:
 # key = a, value = "two"
 # key = b, value = 1

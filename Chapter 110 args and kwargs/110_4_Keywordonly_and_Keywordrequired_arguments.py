@@ -17,6 +17,7 @@ def print_args(arg1, *args, keyword_required, keyword_only=True):
 
 print_args(1, 2, 3, keyword_required=4)
 print("---")
+# adding keyword to override default this time
 print_args(1, 2, 3, keyword_required=4, keyword_only=False)
 # first positional arg: 1
 # another positional arg: 2
