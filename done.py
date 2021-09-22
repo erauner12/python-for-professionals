@@ -14,14 +14,11 @@ for root, dirs, files in os.walk("."):
     for file in files:
         fullPath = root + '/' + file
         if os.path.getsize(fullPath) != 0:
-            if " " in file:
-                os.remove(fullPath)
-                print(file)
             counter = counter + 1
             fileList.append(fullPath)
 
 fileList.sort()
-# for file in fileList:
-#     print(file)
+for file in fileList:
+    print(file)
 
-# print(counter)
+print(counter)
